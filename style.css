@@ -19,6 +19,12 @@
     --corDestaquePadrao: #b40707;
     --corFundoPrincipal: #3677d1;
     --corDestaqueEspecial: ;
+    --corAcompanhamentos: #cadbe9;
+    --corBebidas: #e2dd78;
+    --corKids: #e27878;
+    --corSanduiches: #fe5c37;
+    --corSobremesas: #70b38f;
+    --corTodos: #ffbdd8;
 
     --fonteTitulo: 'New Rocker';
     --fontePadrao: 'Outfit';
@@ -214,6 +220,36 @@ header h1 {
     justify-content: center;
 }
 
+#kids:hover {
+    background-color: var(--corKids);
+    color: white;
+}
+
+#acompanhamentos:hover {
+    background-color: var(--corAcompanhamentos);
+    color: white;
+}
+
+#bebidas:hover {
+    background-color: var(--corBebidas);
+    color: white;
+}
+
+#sanduiches:hover {
+    background-color: var(--corSanduiches);
+    color: white;
+}
+
+#sobremesas:hover {
+    background-color: var(--corSobremesas);
+    color: white;
+}
+
+.filtrar-todos:hover {
+    background-color: var(--corTodos);
+    color: white;
+}
+
 .item-info .descricao {
     line-height: 1.2;
     min-height: calc(1.2em * 2);
@@ -342,4 +378,73 @@ h1{
     padding-bottom: 0.3rem;
     border-radius: 10px;
     color: rgb(250, 102, 198);
+}
+
+
+.diretrizes-dados {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: #b6c3f8;
+}
+
+.diretrizes-dados section {
+    margin-bottom: 2rem;
+}
+
+.diretrizes-dados h1 {
+    margin-bottom: 0.5rem;
+}
+
+.diretrizes-dados h2 {
+    margin-bottom: 0.8rem;
+}
+
+.diretrizes-dados p {
+    line-height: 1.6;
+}
+
+.diretrizes-dados li {
+    margin-bottom: 0.4rem;
+}
+
+.ultima-atualizacao {
+    margin-bottom: 3rem;
+}
+
+.assinatura {
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.trabalhe-conosco {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: #b6c3f8;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 0.8rem;
+    font: inherit;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.trabalhe-conosco button {
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
 }

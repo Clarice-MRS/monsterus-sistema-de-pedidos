@@ -135,6 +135,7 @@ const pratos = [
 /*** CRIAR CARDS DO CARDÁPIO ***/
 
 let indice = 0;
+let pratosAtuais = pratos;
 
 function criarCardapio() { 
  
@@ -144,7 +145,7 @@ function criarCardapio() {
 
     cardsCardapio.innerHTML = "";
 
-    const pratosVisiveis = pratos.slice(indice, indice + 5);
+    const pratosVisiveis = pratosAtuais.slice(indice, indice + 5);
  
     for(const prato of pratosVisiveis) { 
  
@@ -221,5 +222,61 @@ anterior.addEventListener("click", () => {
         indice -= 5;
         criarCardapio();
     }
+
+});
+
+const botoesFiltro = document.querySelectorAll(".filtrar");
+const botaoTodos = document.querySelector(".filtrar-todos");
+
+function controlarSetas() {
+
+    if (pratosAtuais.length <= 5) {
+        proximo.style.display = "none";
+        anterior.style.display = "none";
+    } else {
+        proximo.style.display = "block";
+        anterior.style.display = "block";
+    }
+
+}
+
+function filtrarPratos(categoria) {
+
+    const pratosFiltrados = [];
+
+    for (const prato of pratos) { 
+        if (prato.categoria === categoria) {
+            pratosFiltrados.push(prato);   
+        }
+    }
+
+    return pratosFiltrados; 
+}
+
+for (const botao of botoesFiltro) {
+
+    botao.addEventListener("click", () => {
+
+        const categoria = botao.textContent;
+
+        pratosAtuais = filtrarPratos(categoria);
+
+        indice = 0;
+
+        criarCardapio();
+
+        controlarSetas();
+
+    });
+
+}
+
+botaoTodos.addEventListener("click", () => {
+
+    pratosAtuais = pratos;
+
+    indice = 0;
+
+    criarCardapio();
 
 });
