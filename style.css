@@ -146,7 +146,7 @@ header h1 {
     font-size: 16px;
     color: var(--corFundoPadrao);
     border: 3px solid var(--corFundoPadrao);
-    background-color: #ddd6d6;
+    background-color: #b6c3f8;
 }
 
 .filtrar-cardapio i {
@@ -162,6 +162,8 @@ header h1 {
     gap: 1rem;
     align-items: center;
     padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .carrossel-cardapio button {
@@ -170,11 +172,12 @@ header h1 {
     font-size: 50px;
     border: none;
     background-color: transparent;
+    transition: transform 0.3px ease;
 }
 
-.carrossel-cardapio i:hover {
+.carrossel-cardapio button:hover {
     border-radius: 40px;
-    background-color: #beb5b5bb;
+    transform: scale(1.1);
 }
 
 #cardapio{
@@ -183,12 +186,14 @@ header h1 {
     flex-wrap: nowrap;
     gap: 1rem;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-card {
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 225px;
     height: 300px;
     align-items: center;
     justify-content: center;
@@ -216,8 +221,8 @@ header h1 {
 } 
 
 .item-info img{
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 8px;
 }

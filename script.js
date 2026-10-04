@@ -48,7 +48,7 @@ const pratos = [
 
     {
         nome: "Gagamelo",
-        descricao: "Milk-shake cremoso de caramelo, preparado com uma mistura suave e saborosa, finalizado com o delicioso toque do caramelo. Uma bebida irresistível para acompanhar seu momento. Imagem Meramente Ilustrativa",
+        descricao: "Milk-shake cremoso de caramelo, preparado com uma mistura suave e saborosa, finalizado com o delicioso toque do caramelo. Uma bebida irresistível para acompanhar seu momento. Imagem Meramente Ilustrativa.",
         categoria: "Sobremesas",
         valor: 17.90,
         imagem: "img/gagamelo.jpeg",
@@ -56,35 +56,39 @@ const pratos = [
     },
 
     {
-        nome: "Joanne Dip",
-        descricao: "Molho rosé delicado.",
-        categoria: "Molhos",
-        valor: 5.90,
-        imagem: "img/joannedip.webp"
+        nome: "Dress Burguer",
+        descricao: "Hambúrguer artesanal com pão vermelho, suculenta carne bovina, queijo derretido e alface americana, finalizado com um irresistível molho de pimenta e bacon crocante por cima. Uma combinação intensa, cremosa e cheia de sabor. Imagem Meramente Ilustrativa.",
+        categoria: "Sanduíches",
+        valor: 28.90,
+        imagem: "img/dressburguer.jpeg",
+        alt: "Hambúrguer vermelho com carne, queijo e alface. No topo, bacons e uma bandeirinha azul e branca."
     },
 
     {
-        nome: "Judas Jalapeño",
-        descricao: "Molho apimentado.",
-        categoria: "Molhos",
-        valor: 6.90,
-        imagem: "img/judasjalapeno.jpg"
+        nome: "Speecheese",
+        descricao: "Hambúrguer artesanal duplo, com muito muito queijo e cebola caramelizada. Nossa cebola conta com um delicioso toque de cebola roxa crua para dar crocância ao prato. Imagem Meramente Ilustrativa.",
+        categoria: "Sanduíches",
+        valor: 32.90,
+        imagem: "img/speecheese.jpeg",
+        alt: "Hambúrguer duplo suculentp sob um prato de decoração de piano e dentro de uma garrafa."
     },
 
     {
-        nome: "Summershake",
-        descricao: "Milkshake de manga com pêssego.",
-        categoria: "Bebidas",
+        nome: "Just Free",
+        descricao: "Hambúrguer vegano artesanal, preparado com um delicioso blend vegetal, acompanhado de ingredientes frescos e saborosos. Uma opção leve, cremosa e irresistível para quem ama um bom hambúrguer. Imagem Meramente Ilustrativa.",
+        categoria: "Sanduíches",
+        valor: 30.90,
+        imagem: "img/justfree.jpeg",
+        alt: "Hambúrguer vegano"
+    },
+
+    {
+        nome: "Sour Candy",
+        descricao: "Milkshake de morango e limão, uma combinação docinha e ácida servida em um copo babadeiro que simula um dos mais icônicos saltos usados pela diva pop. Imagem Meramente Ilustrativa.",
+        categoria: "Sobremesas",
         valor: 17.90,
-        imagem: "img/summershake.jpg"
-    },
-
-    {
-        nome: "Cherry Boom",
-        descricao: "Milkshake de cereja.",
-        categoria: "Bebidas",
-        valor: 17.90,
-        imagem: "img/cherryboom.jpg"
+        imagem: "img/sourcandy.jpeg",
+        alt: "Milk-shake de morango e limão dentro de um copo que simula um salto alto rosa."
     },
 
     {
