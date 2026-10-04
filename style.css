@@ -1,61 +1,223 @@
+/*******************
+    GOOGLE FONTS
+*******************/
+
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*********************
+    CONFIG. GERAIS
+*********************/
 
 * {
     padding: 0;
     margin: 0;
 }
 
+:root {
+    --corFundoPadrao: #1a1a1a;
+    --corDestaquePadrao: #b40707;
+    --corFundoPrincipal: #3677d1;
+    --corDestaqueEspecial: ;
+
+    --fonteTitulo: 'New Rocker';
+    --fontePadrao: 'Outfit';
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+html {
+    background-color: var(--corFundoPrincipal);
+    font-family: var(--fontePadrao);
+}
+
+/******************
+    MASTHEAD
+*******************/
+
 header {
     display: flex;
-    padding: 40px;
+    padding: 30px;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 102, 198);
+    font-size: 20px;
+    font-family: var(--fonteTitulo);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--corFundoPadrao);
+}
+
+#menu {
+    position: absolute;
+    left: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+#menu i {
+    font-size: 40px;
+}
+
+#carrinho {
+    position: absolute;
+    right: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+#carrinho i {
+    font-size: 30px;
+}
+
+#acessibilidade {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateY(-50%);
+    border: 3px solid var(--corFundoPadrao);
+    background-color: #b6c3f8;
+}
+
+#acessibilidade i{
+    font-size: 20px;
+}
+
+/*********************
+    TIPO DE PEDIDO
+*********************/
+
+.tipo-pedido {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+
+#botao-delivery, #botao-retirada {
+    display: flex;
     flex-direction: column;
-    background-color: #3c3737;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6c3f8;
+    color: var(--corFundoPadrao);
+    border: 3px solid var(--corFundoPadrao);
+}
+
+#botao-delivery i, #botao-retirada i {
+    font-size: 50px;
+}
+
+#botao-delivery:hover, #botao-retirada:hover {
+    background-color: #beb5b5bb;
+}
+
+
+
+/***********************
+    FILTRAR CARDÁPIO
+***********************/
+
+.filtrar-cardapio {
+    display: flex;
+    padding-bottom: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
-header h1 {
-    color: rgb(232, 86, 24);
-    font-family: "New Rocker";
+.filtrar-cardapio button {
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--corFundoPadrao);
+    border: 3px solid var(--corFundoPadrao);
+    background-color: #ddd6d6;
 }
 
-header a {
-    color: #e85618;
-    text-decoration: none;
+.filtrar-cardapio i {
+    padding-right: 0.5rem;
 }
 
-#cardapio {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    width: 80%;
-    margin: 0 auto;
+/******************
+    CARROSSEL
+*******************/
+
+.carrossel-cardapio {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.carrossel-cardapio button {
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.carrossel-cardapio i:hover {
+    border-radius: 40px;
+    background-color: #beb5b5bb;
+}
+
+#cardapio{
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow: hidden;
 }
 
 .item-card {
     display: flex;
     flex-direction: column;
     width: 230px;
-    min-height: 330px;
+    height: 300px;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     border: none;
     padding: 10px;
     border-radius: 8px;
-    background-color: #bfbfbf;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
 
 .item-info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-family: var(--fontePadrao);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
+.item-info .descricao {
+    line-height: 1.2;
+    min-height: calc(1.2em * 2);
+    font-size: 18px
+} 
+
 .item-info img{
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -83,48 +245,96 @@ header a {
     border-radius: 15px;
     align-items: center;
     border: none;
-    background-color: #e85618;
+    color: white;
+    background-color: var(--corDestaquePadrao);
 }
 
 .adicionar-item {
     padding: 8px;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
-    background-color: #e85618;
+    color: white;
+    background-color: var(--corDestaquePadrao);
 }
 
-.sacola {
+/**************
+    FOOTER
+**************/
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 102, 198);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.footer-institucional {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--corFundoPadrao);
+}
+
+h1{
+    text-align: center;
+    font-family: var(--fonteTitulo);
+    color:var(--corFundoPadrao);
+    padding-bottom: 1rem;
+}
+
+.footer-institucional li a{
+    text-decoration: none;
+}
+
+.footer-institucional a:hover{
+    text-decoration: underline;
+}
+
+.info-institucional ul{
+    gap: 2rem;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    list-style: none;
+}
+
+.info-institucional a {
+    color: black;
+    font-size: 20px;
+}
+
+.footer-social {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    padding-top: 0.8rem;
+    gap: 1.5rem;
     align-items: center;
     justify-content: center;
 }
 
-.sacola button {
-    border: none;
-    padding: 10px;
+.footer-social h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer-social ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social a {
+    color: var(--corFundoPadrao);
+    font-size: 25px;
+    margin: 1.5rem;
+    background-color: #3677d1;
+    padding: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     border-radius: 10px;
-    margin: 10px;   
-}
-
-#botao-sanduiches, #botao-acompanhamentos, 
-#botao-bebidas, #botao-sobremesas {
-    height: 40px;
-    font-size: 10px;
-    border-radius: 50px;
-    background-color: #e85618;
-}
-
-#botao-sacola i {
-    color: white;
-}
-
-#botao-sacola {
-    padding: 20px;
-    font-size: 50px;
-    border-radius: 50px;
-    background-color: #e85618;
-    border: none;
+    color: rgb(250, 102, 198);
 }

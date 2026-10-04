@@ -2,51 +2,57 @@
 
 const pratos = [
     {
-        nome: "The Fame Free",
-        descricao: "Hambúrguer 100% vegano, livre de carne.",
-        categoria: "Sanduíches",
-        valor: 29.90,
-        imagem: "img/thefamefree.jpg"
+        nome: "Little Monster Fries",
+        descricao: "Porção pequena de batatas fritas, crocantes por fora e sequinhas por, preparadas no óleo e levemente temperadas com sal. O acompanhamento perfeito para deixar sua refeição ainda mais deliciosa. Imagem Meramente Ilustrativa.",
+        categoria: "Acompanhamentos",
+        valor: 9.90,
+        imagem: "img/littlemonsterfries.jpeg",
+        alt: "Batatas fritas"
     },
 
     {
-        nome: "Bad RM Burger",
-        descricao: "Hambúrguer com pimenta e pão preto.",
-        categoria: "Sanduíches",
-        valor: 32.90,
-        imagem: "img/BadRMBurger.jpg"
+        nome: "Paws of Cream",
+        descricao: "Delicioso gelato artesanal de creme, servido em uma casquinha muito crocante. Cremoso, intenso e irresistível, uma combinação digna de um toque de extravagância em cada mordida. Imagem Meramente Ilustrativa.",
+        categoria: "Sobremesas",
+        valor: 8.90,
+        imagem: "img/pawsofcream.jpeg",
+        alt: "Casquinnha de gelato de creme em uma mão vermelha que representa o símbolo paws up."
     },
 
     {
-        nome: "Dress Burger",
-        descricao: "Hambúrguer de carne bovina, pão vermelho, salada e molho da casa.",
-        categoria: "Sanduíches",
-        valor: 34.90,
-        imagem: "img/dressburguer.jpg"
+        nome: "Paws of Chocolate",
+        descricao: "Delicioso gelato artesanal de brigadeiro, servido em uma casquinha muito crocante. Cremoso, intenso e irresistível, uma combinação digna de um toque de extravagância em cada mordida. Imagem Meramente Ilustrativa.",
+        categoria: "Sobremesas",
+        valor: 8.90,
+        imagem: "img/pawsofchocolate.jpeg",
+        alt: "Casquinnha de gelato de brigadeiro em uma mão vermelha que representa o símbolo paws up."
     },
 
     {
-        nome: "Haus of Bacon",
-        descricao: "Hambúrguer com bacon crocante.",
-        categoria: "Sanduíches",
-        valor: 36.90,
-        imagem: "img/hausofbacon.webp"
+        nome: "Diamond Rings",
+        descricao: "Anéis de cebola crocantes e douradinhos, preparados para garantir aquela combinação irresistível de textura e sabor. Por fora, uma crocância deliciosa; por dentro, cebola macia e saborosa. Imagem Meramente Ilustrativa.",
+        categoria: "Acompanhamentos",
+        valor: 15.90,
+        imagem: "img/diamondrings.jpeg",
+        alt: "Chapéu rosa com onion rings dentro."
     },
 
     {
-        nome: "Speecheese",
-        descricao: "Hambúrguer duplo com queijo.",
+        nome: "The Egg of Glory",
+        descricao: "Sanduíche artesanal com carne bovina suculenta, ovo, queijo derretido, alface e fatias de tomate, combinados em uma mistura cremosa e saborosa. Uma opção caprichada e irresistível para qualquer momento. Imagem Meramente Ilustrativa.",
         categoria: "Sanduíches",
-        valor: 37.90,
-        imagem: "img/speecheese.webp"
+        valor: 26.90,
+        imagem: "img/theeggofglory.jpeg",
+        alt: "Sanduíche com ovo, carne bovina, tomate e queijo em um prato dourado."
     },
 
     {
-        nome: "Molho Monster",
-        descricao: "O molho especial da casa.",
-        categoria: "Molhos",
-        valor: 5.90,
-        imagem: "img/molhomonster.jpg"
+        nome: "Gagamelo",
+        descricao: "Milk-shake cremoso de caramelo, preparado com uma mistura suave e saborosa, finalizado com o delicioso toque do caramelo. Uma bebida irresistível para acompanhar seu momento. Imagem Meramente Ilustrativa",
+        categoria: "Sobremesas",
+        valor: 17.90,
+        imagem: "img/gagamelo.jpeg",
+        alt: "Milk-shake de caramelo em uma mão vermelha que representa o símbolo paws up."
     },
 
     {
@@ -66,30 +72,6 @@ const pratos = [
     },
 
     {
-        nome: "Little Monster Fries",
-        descricao: "Porção pequena de batata.",
-        categoria: "Porções",
-        valor: 9.90,
-        imagem: "img/littlemonsterfries.jpg"
-    },
-
-    {
-        nome: "Large Monster Fries",
-        descricao: "Porção grande de batata.",
-        categoria: "Porções",
-        valor: 12.90,
-        imagem: "img/largemonterfries.jpg"
-    },
-
-    {
-        nome: "Diamond Rings",
-        descricao: "Anéis de cebola empanados.",
-        categoria: "Porções",
-        valor: 16.90,
-        imagem: "img/diamondrings.jpg"
-    },
-
-    {
         nome: "Summershake",
         descricao: "Milkshake de manga com pêssego.",
         categoria: "Bebidas",
@@ -106,22 +88,6 @@ const pratos = [
     },
 
     {
-        nome: "Sour Candy",
-        descricao: "Milkshake de limão com morango.",
-        categoria: "Bebidas",
-        valor: 18.90,
-        imagem: "img/sourcandy.jpg"
-    },
-
-    {
-        nome: "Gagamelo",
-        descricao: "Milkshake de caramelo.",
-        categoria: "Bebidas",
-        valor: 18.90,
-        imagem: "img/gagamelo.jpg"
-    },
-
-    {
         nome: "Brownie Eyes",
         descricao: "Brownie com sorvete de creme.",
         categoria: "Sobremesas",
@@ -135,14 +101,6 @@ const pratos = [
         categoria: "Sobremesas",
         valor: 19.90,
         imagem: "img/eletricpie.jpg"
-    },
-
-    {
-        nome: "Venus Vanilla",
-        descricao: "Sundae cremoso de baunilha com calda de chocolate.",
-        categoria: "Sobremesas",
-        valor: 21.90,
-        imagem: "img/venusvNILL.jpg"
     },
 
     {
@@ -172,38 +130,92 @@ const pratos = [
 
 /*** CRIAR CARDS DO CARDÁPIO ***/
 
-function criarCardapio() {
+let indice = 0;
 
-    console.log("testando-funcao-chamada");
+function criarCardapio() { 
+ 
+    console.log("testando-funcao-chamada"); 
+ 
+    const cardsCardapio = document.getElementById("cardapio");
 
-    for(const prato of pratos) {
+    cardsCardapio.innerHTML = "";
 
-        const cardsCardapio = document.getElementById("cardapio");
-        cardsCardapio.innerHTML += ` 
-        <div class="item-card">
-            <div class="item-info">  
-                    <img src="${prato.imagem}"> 
-                    <h3 class="nome">${prato.nome}</h3>  
-                    <p class="valor">R$ ${prato.valor}0</p>  
-                    <p class="descricao">${prato.descricao}</p> 
+    const pratosVisiveis = pratos.slice(indice, indice + 5);
+ 
+    for(const prato of pratosVisiveis) { 
+ 
+        cardsCardapio.innerHTML += `  
+            <div class="item-card"> 
+                <div class="item-info">   
+                    <img src="${prato.imagem}">  
+                    <h3 class="nome">${prato.nome}</h3>   
+                    <p class="valor">R$ ${prato.valor}0</p>   
+                </div> 
             </div>
-            <div class="item-quantia">
-                <button type="button" class="diminuir-quantia"><i class="bi bi-dash"></i></button>
-                <span id="valor-quantia">0</span>
-                <button type="button" class="aumentar-quantia"><i class="bi bi-plus"></i></button>
-                <button class="adicionar-item">Adicionar</button>
-            </div>
-        </div>
-    `;
-    }    
-}
-
+        `; 
+    }     
+} 
+ 
 criarCardapio();
-
-console.log("testando-evento");
 
 const cardapio = document.getElementById("cardapio");
 
 cardapio.addEventListener("click", (evento) => {
     console.log(evento.target);
+});
+
+/*** CONTADOR - QUANTIDADE POR ITEM***/
+
+const aumentarcardapio = document.getElementById("cardapio");
+
+aumentarcardapio.addEventListener("click", (evento) => {
+
+    if (evento.target.closest(".aumentar-quantia")) {
+
+        const card = evento.target.closest(".item-card");
+        const quantia = card.querySelector(".valor-quantia");
+
+        let quantidade = Number(quantia.textContent);
+
+        if (quantidade < 20) {
+            quantidade++;
+        }
+
+        quantia.textContent = quantidade;
+
+    } else if (evento.target.closest(".diminuir-quantia")) {
+
+        const card = evento.target.closest(".item-card");
+        const quantia = card.querySelector(".valor-quantia");
+
+        let quantidade = Number(quantia.textContent);
+
+        if (quantidade > 0) {
+            quantidade--;
+        }
+
+        quantia.textContent = quantidade;
+    }
+
+});
+
+const proximo = document.getElementById("prox-itens");
+const anterior = document.getElementById("ant-itens");
+
+proximo.addEventListener("click", () => {
+
+    if (indice + 5 < pratos.length) {
+        indice += 5;
+        criarCardapio();
+    }
+
+});
+
+anterior.addEventListener("click", () => {
+
+    if (indice >= 5) {
+        indice -= 5;
+        criarCardapio();
+    }
+
 });
