@@ -14,20 +14,27 @@
     margin: 0;
 }
 
-:root {
-    --corFundoPadrao: #1a1a1a;
-    --corDestaquePadrao: #b40707;
+:root { 
+    /* CORES PRINCIPAIS */
+    --corFundoPadrao: #fa66c6; 
     --corFundoPrincipal: #3677d1;
-    --corDestaqueEspecial: ;
-    --corAcompanhamentos: #cadbe9;
-    --corBebidas: #e2dd78;
-    --corKids: #e27878;
-    --corSanduiches: #fe5c37;
-    --corSobremesas: #70b38f;
-    --corTodos: #ffbdd8;
+    --corDestaquePadrao: #1a1a1a;
+    
+    /* CORES DA INTERFACE */
+    --corBotoes: #b6c3f8;
+    --corCampos: #e7eaf7;
 
-    --fonteTitulo: 'New Rocker';
-    --fontePadrao: 'Outfit';
+    /* CORES DAS CATEGORIAS */
+    --corAcompanhamentos: #cadbe9; 
+    --corBebidas: #e2dd78; 
+    --corKids: #e27878; 
+    --corSanduiches: #fe5c37; 
+    --corSobremesas: #70b38f; 
+    --corTodos: #ffbdd8; 
+
+    /* FONTES */
+    --fonteTitulo: 'New Rocker'; 
+    --fontePadrao: 'Outfit'; 
 }
 
 button:hover {
@@ -51,7 +58,7 @@ header {
     top: 0;
     align-items: center;
     justify-content: center;
-    background-color: rgb(250, 102, 198);
+    background-color: var(--corFundoPadrao);
     font-size: 20px;
     font-family: var(--fonteTitulo);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
@@ -59,18 +66,7 @@ header {
 
 header h1 {
     margin: 0;
-    color: var(--corFundoPadrao);
-}
-
-#menu {
-    position: absolute;
-    left: 2rem;
-    border: none;
-    background-color: transparent;
-}
-
-#menu i {
-    font-size: 40px;
+    color: var(--corDestaquePadrao);
 }
 
 #carrinho {
@@ -91,8 +87,8 @@ header h1 {
     right: 0;
     top: 100%;
     transform: translateY(-50%);
-    border: 3px solid var(--corFundoPadrao);
-    background-color: #b6c3f8;
+    border: 3px solid var(--corDestaquePadrao);
+    background-color: var(--corBotoes);
 }
 
 #acessibilidade i{
@@ -119,9 +115,10 @@ header h1 {
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    background-color: #b6c3f8;
-    color: var(--corFundoPadrao);
-    border: 3px solid var(--corFundoPadrao);
+    background-color: var(--corBotoes);
+    color: var(--corDestaquePadrao);
+    font-weight: 600;
+    border: 3px solid var(--corDestaquePadrao);
 }
 
 #botao-delivery i, #botao-retirada i {
@@ -150,9 +147,9 @@ header h1 {
     padding: 0.5rem;
     border-radius: 20px;
     font-size: 16px;
-    color: var(--corFundoPadrao);
-    border: 3px solid var(--corFundoPadrao);
-    background-color: #b6c3f8;
+    color: var(--corDestaquePadrao);
+    border: 3px solid var(--corDestaquePadrao);
+    background-color: var(--corBotoes);
 }
 
 .filtrar-cardapio i {
@@ -308,7 +305,7 @@ footer {
     padding: 1rem;
     align-items: center;
     justify-content: center;
-    background-color: rgb(250, 102, 198);
+    background-color: var(--corFundoPadrao);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -318,7 +315,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
-    border-bottom: 3px solid var(--corFundoPadrao);
+    border-bottom: 3px solid var(--corDestaquePadrao);
 }
 
 h1{
@@ -377,7 +374,7 @@ h1{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     border-radius: 10px;
-    color: rgb(250, 102, 198);
+    color: var(--corFundoPadrao);
 }
 
 
@@ -386,7 +383,7 @@ h1{
     margin: 2rem auto;
     padding: 3rem;
     border-radius: 20px;
-    background-color: #b6c3f8;
+    background-color: var(--corBotoes);
 }
 
 .diretrizes-dados section {
@@ -395,6 +392,7 @@ h1{
 
 .diretrizes-dados h1 {
     margin-bottom: 0.5rem;
+    color: var(--corDestaquePadrao);
 }
 
 .diretrizes-dados h2 {
@@ -407,6 +405,7 @@ h1{
 
 .diretrizes-dados li {
     margin-bottom: 0.4rem;
+    color: var(--corDestaquePadrao);
 }
 
 .ultima-atualizacao {
@@ -419,11 +418,15 @@ h1{
 }
 
 .trabalhe-conosco {
-    width: 70%;
+    width: 50%;
     margin: 2rem auto;
     padding: 3rem;
     border-radius: 20px;
-    background-color: #b6c3f8;
+    background-color: var(--corBotoes);
+}
+
+.trabalhe-conosco h1 {
+    color: var(--corDestaquePadrao);
 }
 
 .campo {
@@ -436,8 +439,13 @@ h1{
 .campo input,
 .campo select,
 .campo textarea {
-    padding: 0.8rem;
-    font: inherit;
+    padding: 0.7rem;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--corDestaquePadrao);
+    border: 3px solid var(--corDestaquePadrao);
+    background-color: var(--corCampos);
+    font-family: var(--fontePadrao);
 }
 
 .campo textarea {
@@ -445,6 +453,28 @@ h1{
 }
 
 .trabalhe-conosco button {
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--corDestaquePadrao);
+    border: 3px solid var(--corDestaquePadrao);
+    background-color: #b6c3f8;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.campo input[type="file"] {
+    color: var(--corDestaquePadrao);
+    font-size: 16px;
+}
+
+.campo input[type="file"]::file-selector-button {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--corDestaquePadrao);
+    border: 1px solid var(--corDestaquePadrao);
+    background-color: #e7eaf7;
     cursor: pointer;
 }
