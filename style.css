@@ -75,7 +75,7 @@ header h1 {
     width: 50px;    
 }
 
-#carrinho {
+#carrinho, #home{
     position: absolute;
     right: 2rem;
     border: none;
@@ -83,7 +83,7 @@ header h1 {
     background-color: transparent;
 }
 
-#carrinho i {
+#carrinho i, #home i {
     font-size: 30px;
 }
 
@@ -510,4 +510,16 @@ h1{
     border: 1px solid var(--corDestaquePadrao);
     background-color: #e7eaf7;
     cursor: pointer;
+}
+
+/***************************
+    CARRINHO.HTML
+***************************/
+
+.container-carrinho{
+    width: 70%;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: var(--corBotoes);
 }
