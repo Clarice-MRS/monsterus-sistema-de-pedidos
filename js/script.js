@@ -2,6 +2,7 @@
 
 const pratos = [
     {
+        id: 1,
         nome: "Little Monster Fries",
         descricao: "Porção pequena de batatas fritas.",
         categoria: "Acompanhamentos",
@@ -11,6 +12,7 @@ const pratos = [
     },
 
     {
+        id: 2,
         nome: "Paws of Cream",
         descricao: "Delicioso gelato artesanal de creme.",
         categoria: "Sobremesas",
@@ -20,6 +22,7 @@ const pratos = [
     },
 
     {
+        id: 3,
         nome: "Paws of Chocolate",
         descricao: "Delicioso gelato artesanal de brigadeiro.",
         categoria: "Sobremesas",
@@ -29,6 +32,7 @@ const pratos = [
     },
 
     {
+        id: 4,
         nome: "Diamond Rings",
         descricao: "Anéis de cebola crocantes e douradinhos.",
         categoria: "Acompanhamentos",
@@ -38,6 +42,7 @@ const pratos = [
     },
 
     {
+        id: 5,
         nome: "The Egg of Glory",
         descricao: "Sanduíche com carne, ovo, queijo, alface e tomate.",
         categoria: "Sanduíches",
@@ -47,6 +52,7 @@ const pratos = [
     },
 
     {
+        id: 6,
         nome: "Gagamelo",
         descricao: "Milk-shake cremoso de caramelo.",
         categoria: "Sobremesas",
@@ -56,6 +62,7 @@ const pratos = [
     },
 
     {
+        id: 7,
         nome: "Dress Burguer",
         descricao: "Sanduíche com carne, queijo, alface, molho de pimenta e bacon crocante.",
         categoria: "Sanduíches",
@@ -65,6 +72,7 @@ const pratos = [
     },
 
     {
+        id: 8,
         nome: "Speecheese",
         descricao: "Hambúrguer artesanal duplo, com queijo e cebola caramelizada.",
         categoria: "Sanduíches",
@@ -74,6 +82,7 @@ const pratos = [
     },
 
     {
+        id: 9,
         nome: "Just Free",
         descricao: "Hambúrguer vegano, com blend e queijo vegetal, alface e tomate.",
         categoria: "Sanduíches",
@@ -83,6 +92,7 @@ const pratos = [
     },
 
     {
+        id: 10,
         nome: "Sour Candy",
         descricao: "Milk shake de morango e limão.",
         categoria: "Sobremesas",
@@ -92,6 +102,7 @@ const pratos = [
     },
 
     {
+        id: 11,
         nome: "Brownie Eyes",
         descricao: "Brownie com sorvete de creme.",
         categoria: "Sobremesas",
@@ -101,6 +112,7 @@ const pratos = [
     },
 
     {
+        id: 12,
         nome: "Cherry Boom",
         descricao: "Milk Shake de cereja.",
         categoria: "Sobremesas",
@@ -110,6 +122,7 @@ const pratos = [
     },
 
     {
+        id: 13,
         nome: "Joanne Dip",
         descricao: "Molho Rosé.",
         categoria: "Acompanhamentos",
@@ -119,51 +132,62 @@ const pratos = [
     },
 
     {
+        id: 14,
         nome: "Judas Jalapeño",
         descricao: "Molho Apimentado.",
         categoria: "Acompanhamentos",
         valor: 5.90,
-        imagem: "img/judasjalapeno.jpeg"
+        imagem: "img/judasjalapeno.jpeg",
+        alt: "Molho Apimentado"
     },
 
     {
+        id: 15,
         nome: "Abracadabra-Cola",
         descricao: "Refrigerante sabor cola.",
         categoria: "Bebidas",
         valor: 9.90,
-        imagem: "img/abracadabracola.jpeg"
+        imagem: "img/abracadabracola.jpeg",
+        alt: "Refrigerante de Cola"
     },
 
     {
+        id: 16,
         nome: "Appleuse twist",
         descricao: "Refrigerante de maçã verde com limão.",
         categoria: "Bebidas",
         valor: 9.90,
-        imagem: "img/appleusetwist.jpeg"
+        imagem: "img/appleusetwist.jpeg",
+        alt: "Refrigerante de maçã verde e limão"
     },
 
     {
+        id: 17,
         nome: "Summershake",
         descricao: "Milkshake de manga com pêssego.",
         categoria: "Sobremesas",
         valor: 17.90,
-        imagem: "img/summershake.jpeg"
+        imagem: "img/summershake.jpeg",
+        alt: "Milkshake de manga e pêssego"
     },
 
     {
+        id: 18,
         nome: "Gaga Kids",
         descricao: "Combo para as crianças, com hambúrguer, suco, iogurte e fruta.",
-        categoria: "Kids",
+        categoria: "kids",
         valor: 29.90,
-        imagem: "img/gagakids.jpeg"
+        imagem: "img/gagakids.jpeg",
+        alt: "Combo Kids"
     },
 
-    {
+    {id: 19,
         nome: "Poker Fizz",
         descricao: "Refrigerante de maracujá com um toque de hortelã.",
         categoria: "Bebidas",
         valor: 9.90,
-        imagem: "img/pokerfizz.jpeg"
+        imagem: "img/pokerfizz.jpeg",
+        alt: "Refrigerante de maracujá com hortelã"
     }
 ];
 
@@ -185,7 +209,7 @@ function criarCardapio() {
     for(const prato of pratosVisiveis) { 
  
         cardsCardapio.innerHTML += `  
-            <div class="item-card">
+            <div class="item-card" data-id="${prato.id}">     
                 <div class="item-info">  
                     <img src="${prato.imagem}"> 
                     <h3 class="nome">${prato.nome}</h3>  
@@ -211,7 +235,7 @@ cardapio.addEventListener("click", (evento) => {
     console.log(evento.target);
 });
 
-/*** CONTADOR - QUANTIDADE POR ITEM***/
+/*** CONTADOR - QUANTIDADE POR ITEM E ADICIONAR***/
 
 const aumentarcardapio = document.getElementById("cardapio");
 
@@ -242,8 +266,63 @@ aumentarcardapio.addEventListener("click", (evento) => {
         }
 
         quantia.textContent = quantidade;
-    }
 
+    } else if (evento.target.closest(".adicionar-item")) {
+
+        console.log("CLICOU EM ADICIONAR");
+
+        const card = evento.target.closest(".item-card");
+
+        console.log("achei o card:", card);
+
+        const id = Number(card.dataset.id);
+
+        console.log("3 - id:", id);
+
+        const quantidade = Number(
+        card.querySelector(".valor-quantia").textContent
+        );
+
+        console.log("quantidade:", quantidade);
+
+        if (quantidade === 0) {
+            return;
+        }
+
+        const prato = pratos.find(item => item.id === id);
+
+        console.log("prato:", prato);
+
+        const itemCarrinho = {
+            id: prato.id,
+            nome: prato.nome,
+            valor: prato.valor,
+            imagem: prato.imagem,
+            quantidade: quantidade
+        };
+
+        console.log("item do carrinho:", itemCarrinho);
+
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+        const itemExistente = carrinho.find(item => item.id === id);
+
+        if (itemExistente) {
+
+            itemExistente.quantidade += quantidade;
+
+        } else {
+
+            carrinho.push(itemCarrinho);
+
+        }
+
+        card.querySelector(".valor-quantia").textContent = 0;
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+        console.log("carrinho salvo:", carrinho);
+        }
 });
 
 const proximo = document.getElementById("prox-itens");
@@ -266,6 +345,8 @@ anterior.addEventListener("click", () => {
     }
 
 });
+
+/*** FILTRAR OS PRATOS ***/
 
 const botoesFiltro = document.querySelectorAll(".filtrar");
 const botaoTodos = document.querySelector(".filtrar-todos");
@@ -323,3 +404,19 @@ botaoTodos.addEventListener("click", () => {
 
     controlarSetas();
 });
+
+/*** TIPO DE PEDIDO ***/
+
+const botaoDelivery = document.getElementById("botao-delivery");
+const botaoRetirada = document.getElementById("botao-retirada");
+
+botaoDelivery.addEventListener("click", () => {
+    localStorage.setItem("tipo-pedido", "delivery");
+    window.location.href = "tipopedido.html";
+});
+
+botaoRetirada.addEventListener("click", () => {
+    localStorage.setItem("tipo-pedido", "retirada");
+    window.location.href = "tipopedido.html";
+});
+

@@ -523,3 +523,205 @@ h1{
     border-radius: 20px;
     background-color: var(--corBotoes);
 }
+
+.container-carrinho .info-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-pedido h1 {
+    margin-bottom: 2rem;
+}
+
+.container-pedido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.itens-pedido,
+.resumo-pedido {
+    border: 3px dotted var(--corDestaquePadrao);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.itens-pedido {
+    min-height: 100px;
+    padding: 2rem;
+}
+
+.itens-pedido h2{
+    display: flex;
+    justify-content: center;
+}
+
+.resumo-pedido {
+    padding: 2rem;
+    height: fit-content;
+}
+
+.resumo-pedido h2 {
+    margin-bottom: 2rem;
+}
+
+.valor-pedido,
+.valor-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.valor-pedido {
+    padding-bottom: 1rem;
+}
+
+.valor-total {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--corDestaquePadrao);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resumo-pedido-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ir-pagamento {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.8rem;
+
+    border: 3px solid var(--corDestaquePadrao);
+    border-radius: 20px;
+
+    background-color: var(--corFundoPadrao);
+    color: var(--corDestaquePadrao);
+
+    font-family: var(--fontePadrao);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#zerar-pedido {
+    width: 110px;
+    white-space: nowrap;
+    margin-top: 0.5rem;
+    border: 2px solid var(--corDestaquePadrao);
+    border-radius: 20px;
+    background-color: var(--corFundoPadrao);
+    color: var(--corDestaquePadrao);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.configuracao-pedido {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: var(--corBotoes);
+}
+
+.form-delivery form {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.confirmar-endereço {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--corDestaquePadrao);
+    border: 3px solid var(--corDestaquePadrao);
+    background-color: #e7eaf7;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.restaurantes {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.restaurante {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--corDestaquePadrao);
+    border: 3px solid var(--corDestaquePadrao);
+    background-color: #e7eaf7;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.restaurante i {
+    font-size: 25px;
+}
+
+.restaurante h2 {
+    font-family: var(--fonteTitulo);
+}
+
+#container-itens-pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    height: 400px;
+    overflow-y: auto;
+    
+    box-sizing: border-box;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item-carrinho img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-item-carrinho {
+    flex: 1;
+}
+
+.info-item-carrinho h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-item-carrinho p {
+    margin: 0.2rem 0;
+}
+
+.apagar-item {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: 1rem;
+}
