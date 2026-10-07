@@ -753,7 +753,7 @@ h1{
     RESPONSIVIDADE
 ***************************/
 
-@media (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
 
 /***************************
     PAG. TIPO PEDIDO
@@ -880,9 +880,9 @@ h1{
 }
 
 .item-card {
-    flex: 0 0 210px;
+    flex: 0 0 190px;
     height: 420px;
-    padding: 10px;
+    padding: 7px;
     gap: 0.7rem;
     align-items: center;
     justify-content: center;
@@ -894,8 +894,8 @@ h1{
 }
 
 .item-info img {
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -971,7 +971,7 @@ h1{
 }
 }
 
-@media (max-width: 455px) {
+@media (min-width: 300px) and (max-width: 599px){
 
 /***************************
     CARRINHO
@@ -991,11 +991,18 @@ CARROSSEL
 }
 
 .carrossel-cardapio > button {
-    width: 25px;
-    height: 45px;
-    padding: 0;
-    font-size: 25px;
-    color: var(--corDestaquePadrao);
+    display: none !important;
+}
+
+#cardapio {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    justify-content: flex-start;
+}
+
+#cardapio::-webkit-scrollbar {
+    display: none;
 }
 
 .item-card {
