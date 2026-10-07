@@ -1,6 +1,6 @@
 # MONSTERUS
 
-Projeto de desenvolvimento web de um restaurante fictício inspirado no universo de Lady Gaga.
+Projeto de desenvolvimento web de um restaurante fictício inspirado na Lady Gaga.
 
 O projeto apresenta um sistema de cardápio e pedidos, permitindo que o usuário escolha entre Delivery ou Peça e Retire, selecione produtos, monte seu carrinho e visualize o resumo do pedido.
 
