@@ -533,10 +533,11 @@ h1{
     CARRINHO.HTML
 ***************************/
 
-.container-carrinho{
+.container-carrinho {
     width: 70%;
     margin: 2rem auto;
     padding: 3rem;
+    box-sizing: border-box;
     border-radius: 20px;
     background-color: var(--corBotoes);
 }
@@ -639,6 +640,57 @@ h1{
     font-weight: bold;
 }
 
+#container-itens-pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    height: 400px;
+    overflow-y: auto;
+    
+    box-sizing: border-box;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item-carrinho img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-item-carrinho {
+    flex: 1;
+}
+
+.info-item-carrinho h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-item-carrinho p {
+    margin: 0.2rem 0;
+}
+
+.apagar-item {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+/***************************
+    PAG. TIPO PEDIDO
+***************************/
+
 .configuracao-pedido {
     width: 50%;
     margin: 2rem auto;
@@ -696,52 +748,6 @@ h1{
     font-family: var(--fonteTitulo);
 }
 
-#container-itens-pedido {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-
-    height: 400px;
-    overflow-y: auto;
-    
-    box-sizing: border-box;
-}
-
-.item-carrinho {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.item-carrinho img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.info-item-carrinho {
-    flex: 1;
-}
-
-.info-item-carrinho h3 {
-    margin-bottom: 0.5rem;
-}
-
-.info-item-carrinho p {
-    margin: 0.2rem 0;
-}
-
-.apagar-item {
-    border: none;
-    background: transparent;
-    font-size: 24px;
-    cursor: pointer;
-    padding-right: 1rem;
-}
 
 /***************************
     RESPONSIVIDADE
@@ -750,9 +756,41 @@ h1{
 @media (max-width: 900px) {
 
 /***************************
-    TRABALHE CONOSCO
+    PAG. TIPO PEDIDO
 ***************************/
 
+    .configuracao-pedido {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .form-delivery form {
+        width: 100%;
+    }
+
+    .restaurantes {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .restaurante {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+
+    .restaurante i {
+        font-size: 22px;
+    }
+
+    .restaurante h2 {
+        font-size: 18px;
+    }
+
+}
+
+/***************************
+    TRABALHE CONOSCO
+***************************/
 
    .trabalhe-conosco {
         width: 80%;
@@ -783,15 +821,54 @@ h1{
     .trabalhe-conosco button {
         font-size: 15px;
     }
-}
 
 /***************************
     CARRINHO
 ***************************/
 
+    .container-carrinho {
+        width: 90%;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+
     .container-pedido {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+
+    .itens-pedido,
+    .resumo-pedido {
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    #container-itens-pedido {
+        width: 100%;
+    }
+
+    .item-carrinho {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .item-carrinho img {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    .info-item-carrinho {
+        min-width: 0;
+    }
+
+    .info-item-carrinho h3 {
+        overflow-wrap: break-word;
+    }
+
+    .apagar-item {
+        padding-right: 0;
+        flex-shrink: 0;
     }
 
 /***************************
@@ -879,7 +956,6 @@ h1{
     #botao-retirada i {
         font-size: 45px;
     }
-}
 
 /***************************
     FOOTER
@@ -896,7 +972,7 @@ h1{
         font-size: 17px;
     }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
 
 /***************************
     CARRINHO
@@ -920,6 +996,7 @@ h1{
         height: 45px;
         padding: 0;
         font-size: 25px;
+        color: var(--corDestaquePadrao);
     }
 
     .item-card {
@@ -968,12 +1045,14 @@ h1{
     .diminuir-quantia,
     .aumentar-quantia {
         font-size: 17px;
+        color: var(--corDestaquePadrao);
     }
 
     .adicionar-item {
         width: 80%;
         padding: 5px;
         font-size: 12px;
+        color: var(--corDestaquePadrao);
     }
 
 /***************************
