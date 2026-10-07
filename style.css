@@ -759,335 +759,334 @@ h1{
     PAG. TIPO PEDIDO
 ***************************/
 
-    .configuracao-pedido {
-        width: 80%;
-        padding: 2rem;
-    }
+.configuracao-pedido {
+    width: 80%;
+    padding: 2rem;
+}
 
-    .form-delivery form {
-        width: 100%;
-    }
+.form-delivery form {
+    width: 100%;
+}
 
-    .restaurantes {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+.restaurantes {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
 
-    .restaurante {
-        padding: 0.8rem;
-        font-size: 14px;
-    }
+.restaurante {
+    padding: 0.8rem;
+    font-size: 14px;
+}
 
-    .restaurante i {
-        font-size: 22px;
-    }
+.restaurante i {
+    font-size: 22px;
+}
 
-    .restaurante h2 {
-        font-size: 18px;
-    }
-
+.restaurante h2 {
+    font-size: 18px;
 }
 
 /***************************
     TRABALHE CONOSCO
 ***************************/
 
-   .trabalhe-conosco {
-        width: 80%;
-        padding: 2rem;
-    }
+.trabalhe-conosco {
+    width: 80%;
+    padding: 2rem;
+}
 
-    .campo input,
-    .campo select,
-    .campo textarea {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0.6rem;
-        font-size: 15px;
-    }
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem;
+    font-size: 15px;
+}
 
-    .campo input[type="file"] {
-        width: 100%;
-        font-size: 14px;
-        white-space: normal;
-    }
+.campo input[type="file"] {
+    width: 100%;
+    font-size: 14px;
+    white-space: normal;
+}
 
-    .campo input[type="file"]::file-selector-button {
-        padding: 0.4rem;
-        margin-right: 0.5rem;
-        font-size: 14px;
-    }
+.campo input[type="file"]::file-selector-button {
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    font-size: 14px;
+}
 
-    .trabalhe-conosco button {
-        font-size: 15px;
-    }
+.trabalhe-conosco button {
+    font-size: 15px;
+}
 
 /***************************
     CARRINHO
 ***************************/
 
-    .container-carrinho {
-        width: 90%;
-        padding: 1.5rem;
-        box-sizing: border-box;
-    }
+.container-carrinho {
+    width: 90%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
 
-    .container-pedido {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+.container-pedido {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 
-    .itens-pedido,
-    .resumo-pedido {
-        padding: 1.5rem;
-        box-sizing: border-box;
-    }
+.itens-pedido,
+.resumo-pedido {
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
 
-    #container-itens-pedido {
-        width: 100%;
-    }
+#container-itens-pedido {
+    width: 100%;
+}
 
-    .item-carrinho {
-        width: 100%;
-        min-width: 0;
-    }
+.item-carrinho {
+    width: 100%;
+    min-width: 0;
+}
 
-    .item-carrinho img {
-        width: 80px;
-        height: 80px;
-        flex-shrink: 0;
-    }
+.item-carrinho img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
 
-    .info-item-carrinho {
-        min-width: 0;
-    }
+.info-item-carrinho {
+    min-width: 0;
+}
 
-    .info-item-carrinho h3 {
-        overflow-wrap: break-word;
-    }
+.info-item-carrinho h3 {
+    overflow-wrap: break-word;
+}
 
-    .apagar-item {
-        padding-right: 0;
-        flex-shrink: 0;
-    }
+.apagar-item {
+    padding-right: 0;
+    flex-shrink: 0;
+}
 
 /***************************
     CARROSSEL
 ***************************/
 
 .carrossel-cardapio > button {
-        width: 50px;
-        height: 60px;
-        font-size: 35px;
-    }
+    width: 50px;
+    height: 60px;
+    font-size: 35px;
+}
 
-    .item-card {
-        flex: 0 0 210px;
-        height: 420px;
-        padding: 10px;
-        gap: 0.7rem;
-        align-items: center;
-        justify-content: center;
-    }
+.item-card {
+    flex: 0 0 210px;
+    height: 420px;
+    padding: 10px;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+}
 
-    .item-info {
-        font-size: 17px;
-        gap: 0.4rem;
-    }
+.item-info {
+    font-size: 17px;
+    gap: 0.4rem;
+}
 
-    .item-info img {
-        width: 190px;
-        height: 190px;
-        border-radius: 10px;
-        object-fit: cover;
-    }
+.item-info img {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
-    .item-info .nome {
-        font-size: 18px;
-    }
+.item-info .nome {
+    font-size: 18px;
+}
 
-    .item-info .valor {
-        font-size: 17px;
-    }
+.item-info .valor {
+    font-size: 17px;
+}
 
-    .item-info .descricao {
-        font-size: 15px;
-    }
+.item-info .descricao {
+    font-size: 15px;
+}
 
-    .item-quantia {
-        display: flex;
-        gap: 0.4rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.item-quantia {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .item-quantia span {
-        width: 90px;
-        font-size: 14px;
-    }
+.item-quantia span {
+    width: 90px;
+    font-size: 14px;
+}
 
-    .diminuir-quantia,
-    .aumentar-quantia {
-        font-size: 20px;
-    }
+.diminuir-quantia,
+.aumentar-quantia {
+    font-size: 20px;
+}
 
-    .adicionar-item {
-        width: 80%;
-        padding: 6px;
-        font-size: 14px;
-    }
+.adicionar-item {
+    width: 80%;
+    padding: 6px;
+    font-size: 14px;
+}
 
 /***************************
     BOTAO - TIPO-PEDIDO
 ***************************/
 
-    .tipo-pedido {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        padding: 2rem;
-    }
+.tipo-pedido {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
 
-    #botao-delivery,
-    #botao-retirada {
-        height: 180px;
-    }
+#botao-delivery,
+#botao-retirada {
+    height: 180px;
+}
 
-    #botao-delivery i,
-    #botao-retirada i {
-        font-size: 45px;
-    }
+#botao-delivery i,
+#botao-retirada i {
+    font-size: 45px;
+}
 
 /***************************
     FOOTER
 ***************************/
 
-    .info-institucional ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        padding: 0;
-    }
+.info-institucional ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
 
-    .info-institucional a {
-        font-size: 17px;
-    }
+.info-institucional a {
+    font-size: 17px;
+}
+}
 
-@media (max-width: 460px) {
+@media (max-width: 600px) {
 
 /***************************
     CARRINHO
 ***************************/
 
-    .container-pedido {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+.container-pedido {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
 
 /***************************
-    CARROSSEL
+CARROSSEL
 ***************************/
 
-    .carrossel-cardapio {
-        gap: 0.3rem;
-    }
+.carrossel-cardapio {
+    gap: 0.3rem;
+}
 
-    .carrossel-cardapio > button {
-        width: 25px;
-        height: 45px;
-        padding: 0;
-        font-size: 25px;
-        color: var(--corDestaquePadrao);
-    }
+.carrossel-cardapio > button {
+    width: 25px;
+    height: 45px;
+    padding: 0;
+    font-size: 25px;
+    color: var(--corDestaquePadrao);
+}
 
-    .item-card {
-        flex: 0 0 150px;
-        height: 300px;
-        gap: 0.2rem;
-        align-items: center;
-        justify-content: center;
-    }
+.item-card {
+    flex: 0 0 150px;
+    height: 300px;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+}
 
-    .item-info {
-        font-size: 15px;
-        gap: 0.3rem;
-    }
+.item-info {
+    font-size: 15px;
+    gap: 0.3rem;
+}
 
-    .item-info img {
-        width: 130px;
-        height: 130px;
-        border-radius: 10px;
-        object-fit: cover;
-    }
+.item-info img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
-    .item-info .nome {
-        font-size: 16px;
-    }
+.item-info .nome {
+    font-size: 16px;
+}
 
-    .item-info .valor {
-        font-size: 16px;
-    }
+.item-info .valor {
+    font-size: 16px;
+}
 
-    .item-info .descricao {
-        font-size: 16px;
-    }
+.item-info .descricao {
+    font-size: 16px;
+}
 
-    .item-quantia {
-        display: flex;
-        gap: 0.3rem;
-        flex-wrap: wrap;
-    }
+.item-quantia {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
 
-    .item-quantia span {
-        width: 70px;
-        font-size: 13px;
-    }
+.item-quantia span {
+    width: 70px;
+    font-size: 13px;
+}
 
-    .diminuir-quantia,
-    .aumentar-quantia {
-        font-size: 17px;
-        color: var(--corDestaquePadrao);
-    }
+.diminuir-quantia,
+.aumentar-quantia {
+    font-size: 17px;
+    color: var(--corDestaquePadrao);
+}
 
-    .adicionar-item {
-        width: 80%;
-        padding: 5px;
-        font-size: 12px;
-        color: var(--corDestaquePadrao);
-    }
+.adicionar-item {
+    width: 80%;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--corDestaquePadrao);
+}
 
 /***************************
-    BOTAO - TIPO-PEDIDO
+BOTAO - TIPO-PEDIDO
 ***************************/
 
-    .tipo-pedido {
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
-        padding: 1rem;
-    }
+.tipo-pedido {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+}
 
-    #botao-delivery,
-    #botao-retirada {
-        height: 150px;
-        font-size: 14px;
-    }
+#botao-delivery,
+#botao-retirada {
+    height: 150px;
+    font-size: 14px;
+}
 
-    #botao-delivery i,
-    #botao-retirada i {
-        font-size: 35px;
-    }
+#botao-delivery i,
+#botao-retirada i {
+    font-size: 35px;
+}
 
 /***************************
-    FOOTER
+FOOTER
 ***************************/
 
-    .info-institucional ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        padding: 0;
-    }
+.info-institucional ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
 
-    .info-institucional a {
-        font-size: 17px;
-    }
+.info-institucional a {
+    font-size: 17px;
+}
 }
