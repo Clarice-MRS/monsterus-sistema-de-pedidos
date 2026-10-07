@@ -178,8 +178,14 @@ const anterior = document.getElementById("ant-itens");
 /*** PRÓXIMOS ITENS ***/
 
 proximo.addEventListener("click", () => {
+
+    const card = carrossel.querySelector(".item-card");
+
+    const larguraCard = card.offsetWidth;
+    const gap = parseFloat(getComputedStyle(carrossel).gap);
+
     carrossel.scrollBy({
-        left: carrossel.clientWidth,
+        left: (larguraCard + gap) * 2,
         behavior: "smooth"
     });
 });
@@ -187,8 +193,14 @@ proximo.addEventListener("click", () => {
 /*** ITENS ANTERIORES ***/
 
 anterior.addEventListener("click", () => {
+
+    const card = carrossel.querySelector(".item-card");
+
+    const larguraCard = card.offsetWidth;
+    const gap = parseFloat(getComputedStyle(carrossel).gap);
+
     carrossel.scrollBy({
-        left: -carrossel.clientWidth,
+        left: -(larguraCard + gap) * 2,
         behavior: "smooth"
     });
 });
