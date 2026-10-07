@@ -860,7 +860,7 @@ h1{
         font-size: 17px;
     }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
 
 /***************************
     CARRINHO
@@ -875,17 +875,21 @@ h1{
     CARROSSEL
 ***************************/
 
+    .carrossel-cardapio {
+        gap: 0.3rem;
+    }
+
     .carrossel-cardapio > button {
-        width: 40px;
-        height: 50px;
-        font-size: 28px;
+        width: 25px;
+        height: 45px;
+        padding: 0;
+        font-size: 25px;
     }
 
     .item-card {
-        flex: 0 0 210px;
-        height: 370px;
-        padding: 8px;
-        gap: 0.5rem;
+        flex: 0 0 150px;
+        height: 300px;
+        gap: 0.2rem;
         align-items: center;
         justify-content: center;
     }
@@ -896,8 +900,8 @@ h1{
     }
 
     .item-info img {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
         border-radius: 10px;
         object-fit: cover;
     }
