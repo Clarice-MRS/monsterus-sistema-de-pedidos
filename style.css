@@ -888,7 +888,6 @@ h1{
     height: 420px;
     box-sizing: border-box;
 }
-}
 
 .item-info {
     font-size: 17px;
@@ -1089,4 +1088,177 @@ FOOTER
 .info-institucional a {
     font-size: 17px;
 }
+}
+
+/***************************
+    PAG. TIPO PEDIDO
+***************************/
+
+.configuracao-pedido {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.form-delivery form {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.confirmar-endereço {
+    margin: 0 auto 1rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.restaurantes {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+}
+
+.restaurante {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.restaurante i {
+    font-size: 20px;
+}
+
+.restaurante h2 {
+    font-size: 18px;
+}
+
+/***************************
+    PAG. TIPO PEDIDO
+***************************/
+
+.container-carrinho {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.container-carrinho .info-pedido {
+    text-align: center;
+}
+
+.info-pedido h1 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+.container-pedido {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.itens-pedido,
+.resumo-pedido {
+    border-width: 2px;
+}
+
+.itens-pedido {
+    padding: 1rem;
+}
+
+.resumo-pedido {
+    padding: 1rem;
+}
+
+.resumo-pedido h2 {
+    margin-bottom: 1rem;
+}
+
+#container-itens-pedido {
+    height: 300px;
+}
+
+.item-carrinho {
+    gap: 0.5rem;
+}
+
+.item-carrinho img {
+    width: 70px;
+    height: 70px;
+}
+
+.info-item-carrinho h3 {
+    font-size: 15px;
+}
+
+.info-item-carrinho p {
+    font-size: 13px;
+}
+
+.apagar-item {
+    font-size: 20px;
+    padding-right: 0;
+}
+
+#ir-pagamento {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 16px;
+}
+
+#zerar-pedido {
+    font-size: 14px;
+}
+
+/***************************
+    TRABALHE CONOSCO.HTML
+***************************/
+
+.trabalhe-conosco {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+    .trabalhe-conosco h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .campo {
+        gap: 0.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        padding: 0.6rem;
+        border-radius: 15px;
+        font-size: 14px;
+        border-width: 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .trabalhe-conosco button {
+        padding: 0.5rem;
+        border-radius: 15px;
+        font-size: 14px;
+        border-width: 2px;
+        margin-bottom: 1rem;
+    }
+
+    .campo input[type="file"] {
+        font-size: 13px;
+    }
+
+    .campo input[type="file"]::file-selector-button {
+        padding: 0.4rem;
+        margin-right: 0.5rem;
+        border-radius: 15px;
+        font-size: 13px;
+    }
 }
